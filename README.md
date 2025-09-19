@@ -12,6 +12,6 @@ The first project automates the *installation and configuration of Nginx* web se
 - *Control Node:* Ubuntu VM (running Ansible)  
 - *Managed Nodes:* 2 × AWS EC2 instances (Ubuntu)  
 - *Connectivity:* Ansible communicates via SSH using inventory file  
-
+```
 
 
