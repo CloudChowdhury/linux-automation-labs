@@ -14,4 +14,23 @@ The first project automates the *installation and configuration of Nginx* web se
 - *Connectivity:* Ansible communicates via SSH using inventory file  
 ```
 
+```bash
+##Run this playbook against inventory
+ansible-playbook -i inventory.ini nginx.yml
+
+##Playbook execution outcome
+PLAY RECAP *********************************************************************
+myec2.1                    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+myec2.2                    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+## EC2 instance outcome
+sudo systemctl status nginx
+systemctl status nginx
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; preset: en>
+     Active: active (running) since Fri 2025-09-19 10:22:13 UTC; 5min ago
+     Main PID: 6634 (nginx)
+      Tasks: 3 (limit: 1017)
+     Memory: 2.4M (peak: 5.3M)
+```
 
