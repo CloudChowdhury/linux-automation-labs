@@ -1,0 +1,8 @@
+- name: Gather facts from all EC2 hosts
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: Show all facts
+      ansible.builtin.debug:
+        var: ansible_facts
+

@@ -1,0 +1,18 @@
+--- 
+- name: Install & Start Nginx
+  hosts: all
+  become: yes
+  
+  tasks: 
+  - name: Install nginx
+    apt:
+      name: nginx
+      state: present
+      update_cache: yes   #refresh the repo before install
+
+  - name: Start & enable nginx
+    service: 
+       name: nginx
+       state: started
+       enabled: yes      #nginx starts after reboot
+
