@@ -12,6 +12,11 @@ The first project automates the *installation and configuration of Nginx* web se
 - *Control Node:* Ubuntu VM (running Ansible)  
 - *Managed Nodes:* 2 × AWS EC2 instances (Ubuntu)  
 - *Connectivity:* Ansible communicates via SSH using inventory file  
+
+## Example inventory
+[webservers]
+webserver1 ansible_host=ec2-public-dns-1 ansible_user=ubuntu
+webserver2 ansible_host=ec2-public-dns-2 ansible_user=ubuntu
 ```
 ```bash
 ##Run this playbook against inventory
