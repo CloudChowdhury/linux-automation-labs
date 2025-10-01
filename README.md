@@ -1,7 +1,7 @@
-# Todemonstrate Linux administration and automation skills
+# To demonstrate Linux administration and automation skills
 
 ```
-## Ansible labs
+## Lab Info
 
 This repository contains my Ansible experiments and playbooks.  
 The first project automates the *installation and configuration of Nginx* web server on multiple AWS EC2 instances using Ansible from a control node.  
